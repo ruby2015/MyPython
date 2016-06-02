@@ -1,6 +1,5 @@
 from socket import *
 
-#HOST = '119.29.16.209'
 HOST = 'localhost'
 PORT = 21567
 BUFSIZE = 1024
