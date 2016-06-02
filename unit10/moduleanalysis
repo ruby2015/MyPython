@@ -1,0 +1,8 @@
+import importlib
+
+name = raw_input('please enter the name: ').strip()
+custom_module = importlib.import_module(name)
+names = dir(name)
+for attr in names:
+    value = getattr(name,attr)
+    print 'name=%s,type=%s,value=%s'%(attr,type(value),value)
